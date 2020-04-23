@@ -22,12 +22,11 @@ class Main:
     number_two = input("Enter the number two ")
     
     if option == 1:
-       result = calculator.substract(number_one, number_two)
-       print("number_one %s" % number_one)
+       result = calculator.add(number_one, number_two)
 
     elif option == 2:
-       result = calculator.add(number_one, number_two)
-    
+       result = calculator.substract(number_one, number_two)
+
     elif option == 3:
        result = calculator.multiply(number_one, number_two)
 
