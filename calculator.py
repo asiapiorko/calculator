@@ -12,15 +12,14 @@ class Calculator:
     def divide(self, number_one, number_two):
         return number_one / number_two
 
-
 class Main:
 
     calculator = Calculator()
     print("Enter your option:")
-    option = input("1 add, 2 sub, 3 div, 4 mult")
-    number_one = input("Enter the number one ")
-    number_two = input("Enter the number two ")
-    
+    option = int(input("1 add, 2 sub, 3 div, 4 mult"))
+    number_one = int(input("Enter the number one "))
+    number_two = int(input("Enter the number two "))
+
     if option == 1:
        result = calculator.add(number_one, number_two)
 
